@@ -1,0 +1,3 @@
+from fiona._env import get_gdal_release_name as get_gdal_release_name, get_proj_version_tuple as get_proj_version_tuple
+
+def show_versions() -> None: ...

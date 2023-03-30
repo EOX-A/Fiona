@@ -1,0 +1,6 @@
+from fiona.compat import DICT_TYPES as DICT_TYPES
+from fiona.errors import FionaDeprecationWarning as FionaDeprecationWarning
+from fiona.model import Geometry as Geometry, decode_object as decode_object
+
+def transform(src_crs, dst_crs, xs, ys): ...
+def transform_geom(src_crs, dst_crs, geom, antimeridian_cutting: bool = ..., antimeridian_offset: float = ..., precision: int = ...): ...

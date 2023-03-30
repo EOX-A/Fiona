@@ -1,0 +1,3 @@
+from fiona.fio import options as options, with_context_env as with_context_env
+
+def insp(ctx, src_path, interpreter, open_options) -> None: ...
