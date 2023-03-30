@@ -1,0 +1,23 @@
+# (generated with --quick)
+
+import re
+import sys
+import urllib.parse
+from typing import Any, Dict, Literal, Optional, Set, Tuple, TypeVar, Union, overload
+
+CURLSCHEMES: Set[str]
+REMOTESCHEMES: Set[str]
+SCHEMES: Dict[str, str]
+
+_T0 = TypeVar('_T0')
+
+def is_remote(scheme) -> bool: ...
+def parse_paths(uri, vfs = ...) -> Tuple[Any, Any, Any]: ...
+@overload
+def urlparse(url: str, scheme: str = ..., allow_fragments: bool = ...) -> urllib.parse.ParseResult: ...
+@overload
+def urlparse(url: bytes, scheme: Optional[bytes], allow_fragments: bool = ...) -> urllib.parse.ParseResultBytes: ...
+@overload
+def urlparse(url: None, scheme: Optional[Union[bytes, Literal['']]] = ..., allow_fragments: bool = ...) -> urllib.parse.ParseResultBytes: ...
+def valid_vsi(vsi) -> bool: ...
+def vsi_path(path: _T0, vsi = ..., archive = ...) -> Union[str, _T0]: ...
